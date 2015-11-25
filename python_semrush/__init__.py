@@ -1,37 +1,21 @@
-__author__ = 'jstorer'
+# -*- coding: utf-8 -*-
+"""Wrapper around the SEMrush API."""
+# :copyright: (c) 2015 Jeremy Storer and individual contributors,
+#                 All rights reserved.
+# :license:   MIT License, see LICENSE for more details.
 
-__all__ = ['SemrushClient', 'SemrushClientException']
 
-from python_semrush import SemrushClient, SemrushClientException
+from collections import namedtuple
 
-REGIONAL_DATABASES = {
-    'google.com': 'us',
-    'google.co.uk': 'uk',
-    'google.ca': 'ca',
-    'google.ru': 'ru',
-    'google.de': 'de',
-    'google.fr': 'fr',
-    'google.es': 'es',
-    'google.it': 'it',
-    'google.com.br': 'br',
-    'google.com.au': 'au',
-    'bing.com': 'bing-us',
-    'google.com.ar': 'ar',
-    'google.be': 'be',
-    'google.ch': 'ch',
-    'google.dk': 'dk',
-    'google.fi': 'fi',
-    'google.com.hk': 'hk',
-    'google.ie': 'ie',
-    'google.co.il': 'il',
-    'google.com.mx': 'mx',
-    'google.nl': 'nl',
-    'google.no': 'no',
-    'google.pl': 'pl',
-    'google.se': 'se',
-    'google.com.sg': 'sg',
-    'google.com.tr': 'tr',
-    'google.com': 'mobile-us',
-    'google.co.jp': 'jp',
-    'google.co.in': 'in'
-}
+version_info_t = namedtuple(
+    'version_info_t', ('major', 'minor', 'micro', 'releaselevel', 'serial'),
+)
+
+VERSION = version_info_t(0, 1, 2, '', '')
+__version__ = '{0.major}.{0.minor}.{0.micro}{0.releaselevel}'.format(VERSION)
+__author__ = 'Jeremy Storer'
+__contact__ = 'storerjeremy@gmail.com'
+__homepage__ = 'http://github.com/storerjeremy/python-semrush'
+__docformat__ = 'restructuredtext'
+
+# -eof meta-

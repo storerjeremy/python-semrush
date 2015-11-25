@@ -1,0 +1,11 @@
+Domain;Competitor Relevance;Common Keywords;Organic Keywords;Organic Traffic;Organic Cost;Adwords Keywords
+wordtracker.com;11.70;888;2337;14424;43425;0
+moz.com;11.08;2103;13642;118148;537444;1170
+seocentro.com;8.99;565;1034;8269;22462;0
+wordstream.com;8.85;1826;15264;141247;547423;1436
+bruceclay.com;7.75;635;2942;10853;111142;0
+smallseotools.com;7.42;578;2532;93855;52850;0
+webseoanalytics.com;7.13;450;1054;2099;8325;0
+internetmarketingninjas.com;6.67;550;2993;16286;108353;7
+searchenginewatch.com;5.96;1805;24867;258817;762913;0
+searchenginejournal.com;5.76;1089;13573;70771;237464;0
