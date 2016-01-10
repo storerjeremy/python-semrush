@@ -71,7 +71,7 @@ pats = {re_meta: add_default,
         re_vers: add_version,
         re_doc: add_doc}
 here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, 'python-semrush/__init__.py')) as meta_fh:
+with open(os.path.join(here, 'python_semrush/__init__.py')) as meta_fh:
     meta = {}
     for line in meta_fh:
         if line.strip() == '# -eof meta-':
