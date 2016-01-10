@@ -1,0 +1,11 @@
+include CHANGELOG.md
+include LICENSE
+include README.rst
+include MANIFEST.in
+include setup.cfg
+include setup.py
+recursive-include python-semrush *.py
+recursive-include docs *
+recursive-include requirements *.txt
+prune *.pyc
+prune *.sw*
