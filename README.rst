@@ -20,23 +20,20 @@ From github;
 
     $ pip install git+https://github.com/storerjeremy/python-semrush.git
 
-
 Usage
 =====
+.. code-block:: python
 
-
-
-
-Method Docs
-===========
-
-Todo
+    from python_semrush.semrush import SemrushClient
+    client = SemrushClient(key='your_semrush_api_key')
+    result = client.domain_ranks(domain='example.com')
 
 Todo
 ====
 
 - Implement projects API http://www.semrush.com/api-projects/
 - Implement accounts API http://www.semrush.com/api-accounts/
+- Implement specific errors
 
 License
 =======
