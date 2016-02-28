@@ -2,7 +2,10 @@
 from __future__ import absolute_import, print_function, unicode_literals
 import os
 from unittest import TestCase
-from unittest.mock import patch
+try:
+    from unittest.mock import patch
+except:
+    from mock import patch
 from python_semrush.semrush import SemrushClient
 from requests import Response
 
