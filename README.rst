@@ -18,7 +18,7 @@ From github;
 
 .. code-block:: bash
 
-    $ pip install git+https://github.com/storerjeremy/python-semrush.git
+    $ pip install git+https://github.com/sishinami/python-semrush.git
 
 Usage
 =====
@@ -46,3 +46,5 @@ Author
 ======
 
 Jeremy Storer <storerjeremy@gmail.com>
+
+@2021 sishinami <git@mail.hazime.net>
