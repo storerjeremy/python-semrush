@@ -1,3 +1,7 @@
+# Release 0.1.5 - Wed 12 29 14:02:01 JST 2021
+
+- fixed minor bug.
+
 # Release 0.1.4 - Wed 12 29 12:40:01 JST 2021
 
 - modify encord.
