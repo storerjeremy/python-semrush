@@ -66,7 +66,8 @@ class SemrushClient(object):
         kwargs['key'] = self.key
 
         response = requests.get(self.api_url, params=kwargs)
-
+        if 'export_columns' in kwargs:
+            kwargs['export_columns'] = ",".join([c.strip() for c in kwargs['export_columns'].split(',')])
         if response.status_code == 200:
             return response.content
         else:
@@ -76,13 +77,13 @@ class SemrushClient(object):
     def parse_response(data):
         results = []
         data = data.decode('utf-8')
-        lines = data.split('\r\n')
+        lines = data.splitlines()
         lines = list(filter(bool, lines))
         columns = lines[0].split(';')
 
         for line in lines[1:]:
             result = {}
-            for i, datum in enumerate(line.split(';')):
+            for i, datum in enumerate(line.split('";"')):
                 result[columns[i]] = datum.strip('"\n\r\t')
             results.append(result)
 
