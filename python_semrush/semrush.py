@@ -75,7 +75,7 @@ class SemrushClient(object):
     @staticmethod
     def parse_response(data):
         results = []
-        data = data.decode('unicode_escape')
+        data = data.decode('utf-8')
         lines = data.split('\r\n')
         lines = list(filter(bool, lines))
         columns = lines[0].split(';')
