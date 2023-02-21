@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, unicode_literals
+
 import requests
-from python_semrush.errors import *
+
+from pyrush.errors import *
 
 SEMRUSH_API_URL = 'http://api.semrush.com/'
 SEMRUSH_ASNS_API_URL = 'http://api.asns.backend.semrush.com/'
