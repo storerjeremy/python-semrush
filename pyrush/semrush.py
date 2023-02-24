@@ -44,7 +44,7 @@ REGIONAL_DATABASES = {
 
 
 class SemrushClient(object):
-    def __init__(self, key, limit: int):
+    def __init__(self, key):
         if not key:
             raise SemRushKeyError("A Semrush key must be provided")
         self.api_url = SEMRUSH_API_URL
