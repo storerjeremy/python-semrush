@@ -48,6 +48,7 @@ class SemrushClient(object):
         if not key:
             raise SemRushKeyError("A Semrush key must be provided")
         self.api_url = SEMRUSH_API_URL
+        self.url = SEMRUSH_URL
         self.key = key
 
     @staticmethod
@@ -80,7 +81,7 @@ class SemrushClient(object):
         Unit Balance
         This report provides the number of API units remaining in the account.
         """
-        url = self.api_url + "countapiunits.html"
+        url = self.url + "users/countapiunits.html"
         auth_url = url + "?key=" + self.key
         return requests.get(auth_url)
 
