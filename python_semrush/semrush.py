@@ -916,3 +916,8 @@ class SemrushClient(object):
         """
         self.api_url = SEMRUSH_API_V1_URL
         return self.produce('backlinks_pages', target=target, target_type=target_type, **kwargs)
+
+    def subfolder_rank_history(self, domain, database, **kwargs):
+        if database not in REGIONAL_DATABASES.values():
+            raise SemRushRegionalDatabaseError('%s - is not an accepted database.' % database)
+        return self.produce('subfolder_rank_history', domain=domain, database=database, **kwargs)
